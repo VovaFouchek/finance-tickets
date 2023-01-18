@@ -1,6 +1,8 @@
+import Home from './pages';
+
 const App = () => (
 	<div className="App">
-		<h1>Test2</h1>
+		<Home />
 	</div>
 );
 
