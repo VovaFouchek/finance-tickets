@@ -10,6 +10,7 @@
 		"react-hooks/exhaustive-deps": "warn",
 		"import/no-extraneous-dependencies": ["off", { "includeInternal": true, "includeTypes": true }],
 		"import/prefer-default-export": "off",
+		"no-param-reassign": ["error", { "props": false }],
 		"no-console": "warn",
 		"react/function-component-definition": [
 			2,
