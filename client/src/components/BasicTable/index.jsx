@@ -29,15 +29,7 @@ const BasicTable = () => {
 		return colorChangedTicker.grey;
 	};
 
-	const typeSymbol = value => {
-		if (value > 0) {
-			return '+';
-		}
-		if (value < 0) {
-			return '-';
-		}
-		return '';
-	};
+	const typeSymbol = value => (value > 0 ? '+' : '');
 
 	return (
 		<TableContainer component={Paper}>
@@ -59,7 +51,8 @@ const BasicTable = () => {
 							</TableCell>
 							<TableCell align="center">${row.price}</TableCell>
 							<TableCell align="center" sx={{ color: typeColor(row.change), fontWeight: 'bold' }}>
-								{typeSymbol(row.change)}${row.change}
+								{typeSymbol(row.change)}
+								{row.change}
 							</TableCell>
 							<TableCell align="center" sx={{ color: typeColor(row.change) }}>
 								{row.change_percent}

@@ -1,6 +1,6 @@
 {
 	"extends": ["airbnb", "airbnb/hooks", "prettier"],
-	"plugins": ["prettier", "react-hooks", "import"],
+	"plugins": ["prettier", "react-hooks", "import", "jest"],
 	"rules": {
 		"prettier/prettier": ["warn"],
 		"react/jsx-uses-react": "off",
@@ -49,6 +49,7 @@
 	},
 	"env": {
 		"browser": true,
-		"node": true
+		"node": true,
+		"jest/globals": true
 	}
 }

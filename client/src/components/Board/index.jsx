@@ -43,7 +43,6 @@ const Board = () => {
 			</Container>
 		);
 	}
-
 	return <BasicTable />;
 };
 

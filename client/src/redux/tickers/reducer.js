@@ -16,6 +16,6 @@ const ticketsSlice = createSlice({
 	},
 });
 
-export const { startLoading, setTickersData } = ticketsSlice.actions;
+export const { setTickersData } = ticketsSlice.actions;
 
 export default ticketsSlice.reducer;
